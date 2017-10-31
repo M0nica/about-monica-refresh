@@ -1,8 +1,10 @@
+
+[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
+
 # About Monica Redesign (Under Construction)
 
 <img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/website-preview-10-30.png" alt="draft of site as of 10-30-17">
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 

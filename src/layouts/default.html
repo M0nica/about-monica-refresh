@@ -1,0 +1,29 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Powell - Web Developer</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://use.fontawesome.com/594c178d6e.js"></script>
+
+  </head>
+  <body>
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+    <footer>
+      <div class="row">
+          <div class="large-12 columns">
+            © Monica Powell 2017
+           </div>
+      </div>
+   </footer>
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

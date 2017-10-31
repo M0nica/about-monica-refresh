@@ -1,0 +1,131 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+body {
+  background-color: rgba(208, 189, 196, 0.33);
+  font-family: 'Lato', sans-serif;
+  color: #353530;
+
+}
+
+#intro-paragraph {
+  font-weight: bold;
+}
+.purple-text {
+  color: #615868;
+  font-weight: bold;
+}
+
+.previousgrey {
+  color: #848482;
+}
+a {
+  text-decoration: none;
+  border-bottom: 3px solid #D0BDC4;
+}
+
+a:link, a:visited {
+    color: #615868;
+}
+
+a:hover {
+  color: #353530;
+}
+
+ul {
+  margin: 0 auto;
+  width: 90%;
+  list-style: none;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: #615868;
+}
+
+$hero-height: 60vh;
+
+.hero-section {
+  background: url('../img/desk.jpg');
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}
+
+.firstcharacter {
+  color: #615868;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+
+// ul li{
+//   display:inline-block;
+// }

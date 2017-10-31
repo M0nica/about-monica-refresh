@@ -125,6 +125,27 @@ $hero-height: 60vh;
   padding-left: 3px;
 }
 
+img.logo {
+  filter: none;
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+img.logo:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter:    grayscale(0%);
+  -ms-filter:     grayscale(0%);
+  -o-filter:      grayscale(0%);
+}
+
+a.logo-link {
+    border-bottom: none;
+}
 
 // ul li{
 //   display:inline-block;

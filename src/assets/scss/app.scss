@@ -182,8 +182,24 @@ h2 {
 h3 {
   font-size: 1.4rem;
   color: #615868;
+  background-size: 1px 1em;
+
+
 }
 
+/* row styles */
+.row.cta {
+    background-color: #ffffff;
+  }
+
+  .row.cta p {
+    text-align: center;
+    margin: 1em;
+  }
+
+  .row.skills {
+    background-color: #a0807938;
+}
 
 /* footer, social icons, credit, etc. */
 

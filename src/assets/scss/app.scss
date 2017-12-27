@@ -57,6 +57,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #353530;
   font-size: 18px;
+  overflow-x: hidden;
 
 }
 
@@ -80,6 +81,15 @@ p a {
 a:link, a:visited {
     color: #615868;
 }
+
+#credits a:link, #credits a:visited {
+    color:#efe9eb;
+}
+
+#credits a:hover {
+  color: white;
+}
+
 
 a:hover {
   color: #353530;
@@ -211,6 +221,11 @@ h3 {
     padding: .2em;
 }
 
+/* add spacing between social icons */
+svg.social {
+    margin: .3em;
+}
+
 #social-icons a {
     border: none;
 }
@@ -288,3 +303,10 @@ a.logo-link {
 .tint:hover:before {
   background: none;
 }
+
+/* debugging ghost elements */
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }

@@ -92,11 +92,23 @@ ul {
   list-style: none;
 }
 
+#navigation{
+  background-color: white;
+  width: 100%;
+}
 .topnav {
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
+
+.paradeiser img {
+    padding: 1em;
+}
+.paradeiser .paradeiser_dropdown.active, .paradeiser .paradeiser_dropdown:hover, .paradeiser a.active, .paradeiser a:hover {
+    background: #efe9eb;
+}
+
 .topnav a {
     float: left;
     display: block;
@@ -116,6 +128,10 @@ ul {
 
 
 $hero-height: 60vh;
+
+.not-hero-section {
+    padding-top: 4em;
+}
 
 .hero-section {
   background: url('../img/desk.jpg');
@@ -224,4 +240,34 @@ img.logo:hover {
 
 a.logo-link {
     border-bottom: none;
+}
+/* make portfolio images full width*/
+
+.large-6.columns.tint {
+    padding: 0;
+}
+
+.tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(239, 233, 235, .3);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+
+.tint:hover:before {
+  background: none;
 }

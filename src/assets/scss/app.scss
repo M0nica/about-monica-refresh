@@ -55,7 +55,7 @@
 body {
   background-color: rgba(208, 189, 196, 0.33);
   font-family: 'Lato', sans-serif;
-  color: #353530;
+  color: #3a324a;
   font-size: 18px;
   overflow-x: hidden;
 
@@ -63,7 +63,7 @@ body {
 
 /*make rows full width */
 .row {
-  max-width: 100%;
+ max-width: 100%;
 }
 
 
@@ -80,11 +80,19 @@ p a {
 
 a:link, a:visited {
     color: #615868;
+    font-weight: bold;
 }
 
-#credits a:link, #credits a:visited {
-    color:#efe9eb;
+
+.cta-github a:link, .cta-github a:visited {
+    color:#ded2d2;
+    border-bottom: 2px solid #a08079;
 }
+
+#credits a {
+    color: #efe9eb;
+}
+
 
 #credits a:hover {
   color: white;
@@ -109,6 +117,10 @@ ul {
 }
 .topnav {
     overflow: hidden;
+}
+
+nav .fa-twitter path, nav .fa-github path, nav .fa-rocket path, nav .fa-file path {
+    fill: #615967;
 }
 
 /* Style the links inside the navigation bar */
@@ -191,21 +203,30 @@ h2 {
 }
 
 h3 {
+  margin-top: .5em;
   font-size: 1.9rem;
-  color: #615868;
+  color: #3a324a;
   background-size: 1px 1em;
 
 
 }
 
 /* row styles */
-.row.cta {
+.row.cta-email {
     background-color: #ffffff;
   }
 
-  .row.cta p {
+  .row.cta-github, .row.design-quote {
+      background-color:  #615967;
+    }
+
+  .row.cta-email p, .row.cta-github p, .row.design-quote p {
     text-align: center;
     margin: 1em;
+  }
+
+  .row.cta-github p, .row.design-quote p {
+    color: white;
   }
 
   .row.skills {
@@ -230,10 +251,7 @@ svg.social {
     border: none;
 }
 
-#credits .fa, #credits .fa a{
-    color: #efe9eb;
-    border: none;
-}
+
 #credits {
     background-color: #625968;
     color: #efe9eb;
@@ -304,6 +322,44 @@ a.logo-link {
   background: none;
 }
 
+/*add padding for anchor tags*/
+
+:target:before {
+content:"";
+display:block;
+height:75px; /* fixed header height*/
+margin:-75px 0 0; /* negative fixed header height */
+}
+
+/*add background color for description below images*/
+p.description {
+    background-color: #ded2d2;
+    padding: 1em;
+}
+
+.button {
+  background-color:#625968;
+  margin: 0;
+
+}
+
+a.button {
+  color: white;
+}
+
+.button:hover{
+  background-color: #ded2d2;
+}
+
+a.button:hover {
+
+  color: #3a324a;
+}
+
+.skill {
+    background-color: #ffffff5e;
+    padding: .1em;
+  }
 /* debugging ghost elements */
 // * {
 //   background: #000 !important;

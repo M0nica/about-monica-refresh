@@ -27,8 +27,12 @@
   </head>
   <body>
 
+
+
     {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
     {{> body}}
+
+  </div>
 
     <footer>
 
@@ -83,5 +87,19 @@
       </div>
    </footer>
     <script src="{{root}}assets/js/app.js"></script>
+    <script>
+
+
+    $(window).load(function(){
+$(window).scroll(function() {
+  var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
+  console.log(wintop);
+  var totalScroll = (wintop/(docheight-winheight))*100;
+  console.log("total scroll" + totalScroll);
+  $(".progressBar").css("width",totalScroll+"%");
+});
+
+});
+    </script>
   </body>
 </html>

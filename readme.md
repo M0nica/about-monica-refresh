@@ -1,6 +1,6 @@
 # About Monica Redesign (Under Construction)
 
-<img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/website-preview-11-1.png" alt="draft of site as of 11-01-17">
+<img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/about-monica-website-screenshot.png" alt="draft of site as of 11-01-17">
 
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**

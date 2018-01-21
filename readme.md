@@ -1,4 +1,4 @@
-# About Monica Redesign (Under Construction)
+# About Monica Redesigned
 
 <img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/about-monica-website-screenshot.png" alt="draft of site as of 11-01-17">
 

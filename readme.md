@@ -1,11 +1,11 @@
-# About Monica Redesign (Under Construction)
+# About Monica Redesigned
 
-<img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/website-preview-11-1.png" alt="draft of site as of 11-01-17">
+<img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/about-monica-website-screenshot.png" alt="draft of site as of 11-01-17">
 
+## Purpose
+This repository houses Monica Powell's web development and design portfolio. It is built using HTML/CSS and JavaScript and was developed from  [Zurb's Foundation for Sites](http://foundation.zurb.com/sites).
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
+It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
 - Sass compilation and prefixing
@@ -15,6 +15,9 @@ This is the official ZURB Template for use with [Foundation for Sites](http://fo
   - CSS compression
   - JavaScript compression
   - Image compression
+  
+## Live Demo
+A version of the code in this repository can be viewed at <a href="http://wwww.aboutmonica.com">www.aboutmonica.com</a>.
 
 ## Installation
 
@@ -22,30 +25,6 @@ To use this template, your computer needs:
 
 - [NodeJS](https://nodejs.org/en/) (0.12 or greater)
 - [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template zurb
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-Now `cd` to your project name and to start your project run
-
-```bash
-foundation watch
-```
 
 ### Manual Setup
 

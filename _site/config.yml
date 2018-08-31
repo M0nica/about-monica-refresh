@@ -1,8 +1,10 @@
-backend:
-  name: github
-  repo: m0nica/about-monica-refresh
-  branch: master
-  site_domain: thirsty-franklin-d25803.netlify.com
+#backend:
+# name: github
+# repo: m0nica/about-monica-refresh
+# branch: master
+# site_domain: thirsty-franklin-d25803.netlify.com
+
+repository: m0nica/about-monica-refresh
 
 # Your project's server will run on localhost:xxxx at this port
 PORT: 8000
@@ -66,3 +68,7 @@ PATHS:
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
+
+plugins:
+  - "jekyll-github-metadata"
+github: [metadata]

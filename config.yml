@@ -1,3 +1,9 @@
+backend:
+  name: github
+  repo: m0nica/about-monica-refresh
+  branch: master
+  site_domain: thirsty-franklin-d25803.netlify.com
+
 # Your project's server will run on localhost:xxxx at this port
 PORT: 8000
 
@@ -18,7 +24,7 @@ UNCSS_OPTIONS:
 # Gulp will reference these paths when it copies files
 PATHS:
   # Path to dist folder
-  dist: "dist"  
+  dist: "dist"
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"

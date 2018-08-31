@@ -1,0 +1,113 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monica Powell - Web Developer</title>
+    <meta property="og:image" content="http://aboutmonica.com/assets/img/about-monica-preview-1.png"> 
+    
+    <!-- <script src="https://use.fontawesome.com/594c178d6e.js"></script> -->
+           <script defer src="{{root}}assets/js/fontawesome/fontawesome-all.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paradeiser/0.4.2/min/paradeiser.min.css">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+    <link rel="stylesheet" href="{{root}}assets/css/bttn.min.css">
+
+    <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+  <!-- fotorama.css & fotorama.js. -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet">
+  <!-- 3 KB -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.js"></script>
+  <!-- 16 KB -->
+  </head>
+  <body>
+
+
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+  </div>
+
+    <footer>
+
+
+
+
+      <br>
+
+      <!-- <div class="row">
+        <div class="large-6 large-centered columns">
+          <center><img src="assets/img/monicapowelllogo.svg" width=150></center>
+        </div>
+      </div> -->
+      <div class="row" id="credits">
+
+
+          <div class="large-12 columns">
+            <center>
+
+
+            <a href="https://github.com/m0nica" target="_blank"> <i class="fab fa-github fa-2x social" aria-hidden="true"></i></a>
+
+&nbsp;
+
+<a href="https://www.linkedin.com/in/monicampowell">
+<i class="fab fa-linkedin-in fa-2x social" aria-hidden="true"></i></a>
+
+&nbsp;
+
+<a href="https://medium.com/@monica_">
+<i class="fab fa-medium-m fa-2x social" aria-hidden="true"></i></a>
+
+&nbsp;
+
+
+
+<a href="mailto:monica@aboutmonica.com">
+  <i class="far fa-envelope fa-2x social" aria-hidden="true"></i></a>
+
+<br>
+
+
+        Made with <i class="fa fa-heart" aria-hidden="true"></i> &amp; <i class="fa fa-code" aria-hidden="true"></i>
+ in Brooklyn, New York <br>   © Monica Powell,
+
+<!-- get current year for footer -->
+ <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>
+
+
+ </center>
+           </div>
+
+
+
+
+      </div>
+   </footer>
+    <script src="{{root}}assets/js/app.js"></script>
+    <script>
+
+
+    $(window).load(function(){
+$(window).scroll(function() {
+  var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
+  console.log(wintop);
+  var totalScroll = (wintop/(docheight-winheight))*100;
+  console.log("total scroll" + totalScroll);
+  $(".progressBar").css("width",totalScroll+"%");
+});
+
+});
+    </script>
+  </body>
+</html>

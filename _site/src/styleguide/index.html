@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.4.0 -->
+<title>The Grid | about-monica-refresh</title>
+<meta name="generator" content="Jekyll v3.7.3" />
+<meta property="og:title" content="The Grid" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content=":sparkles: Monica Powell’s personal portfolio website of misc. coding projects." />
+<meta property="og:description" content=":sparkles: Monica Powell’s personal portfolio website of misc. coding projects." />
+<meta property="og:site_name" content="about-monica-refresh" />
+<script type="application/ld+json">
+{"description":":sparkles: Monica Powell’s personal portfolio website of misc. coding projects.","url":"/src/styleguide/","headline":"The Grid","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=d64843675b07e155301694be052b711c7f94225e">
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="/">about-monica-refresh</a></h1>
+      
+
+      <h1 id="the-grid">The Grid</h1>
+
+<p class="lead">Problem: You've got tons of content, each needing different sized vertical columns, and don't know how to quick and easily get it all done. Solution: The awesome grid!</p>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>The grid is built around two key elements: rows and columns. Rows create a max-width and contain the columns, and columns create the final structure. Everything on your page that you don’t give a specific structural style to should be within a row or column.</p>
+
+<hr />
+
+<h2 id="nesting">Nesting</h2>
+
+<p>In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.</p>
+
+<hr />
+
+<h2 id="how-to-use">How to Use</h2>
+
+<p>Using this framework is easy. Here’s how your code will look when you use a series of <code class="highlighter-rouge">&lt;div&gt;</code> tags to create vertical columns.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 medium-4 large-3 columns"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-6 medium-8 large-9 columns"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="row display">
+  <div class="small-12 large-4 columns">4</div>
+  <div class="small-12 large-4 columns">4</div>
+  <div class="small-12 large-4 columns">4</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-3 columns">3</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-2 columns">2</div>
+  <div class="small-12 large-8 columns">8</div>
+  <div class="small-12 large-2 columns">2</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-3 columns">3</div>
+  <div class="small-12 large-9 columns">9</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-4 columns">4</div>
+  <div class="small-12 large-8 columns">8</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-5 columns">5</div>
+  <div class="small-12 large-7 columns">7</div>
+</div>
+<div class="row display">
+  <div class="small-12 large-6 columns">6</div>
+  <div class="small-12 large-6 columns">6</div>
+</div>
+
+<hr />
+
+<h2 id="nesting-rows">Nesting Rows</h2>
+
+<p>In the Grid you can nest columns down as far as you’d like. Just embed rows inside columns and go from there. Each embedded row can contain up to 12 columns.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-8 columns"</span><span class="nt">&gt;</span>8
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-8 columns"</span><span class="nt">&gt;</span>8 Nested
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-8 columns"</span><span class="nt">&gt;</span>8 Nested Again<span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-4 columns"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="row display">
+  <div class="small-8 columns">8
+    <div class="row">
+      <div class="small-8 columns">8 Nested
+        <div class="row">
+          <div class="small-8 columns">8 Nested Again</div>
+          <div class="small-4 columns">4</div>
+        </div>
+      </div>
+      <div class="small-4 columns">4</div>
+    </div>
+  </div>
+  <div class="small-4 columns">4</div>
+</div>
+
+<hr />
+
+<h2 id="small-grid">Small Grid</h2>
+
+<p>As you’ve probably noticed in the examples above, you have access to a small, medium, and large grid. If you know that your grid structure will be the same for small devices as it will be on large devices, just use the small grid. You can override your small grid classes by adding medium or large grid classes.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-2 columns"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-10 columns"</span><span class="nt">&gt;</span>10, last<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-3 columns"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"small-9 columns"</span><span class="nt">&gt;</span>9, last<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<div class="row display">
+  <div class="small-2 columns">2</div>
+  <div class="small-10 columns">10, last</div>
+</div>
+<div class="row display">
+  <div class="small-3 columns">3</div>
+  <div class="small-9 columns">9, last</div>
+</div>
+
+<h1 id="colors">Colors</h1>
+
+<p class="lead">Below you can find the different values we created that support the primary color variable you can change at any time in <code>\_settings.scss</code></p>
+
+<hr />
+
+<div class="row up-1 medium-up-3 large-up-5">
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #2199e8"></span>
+      #2199e8
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #3adb76"></span>
+      #3adb76
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #ffae00"></span>
+      #ffae00
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #ec5840"></span>
+      #ec5840
+    </div>
+  </div>
+  <div class="column">
+    <div class="color-block">
+      <span style="background: #0a0a0a"></span>
+      #0a0a0a
+    </div>
+  </div>
+</div>
+
+<h1 id="typography">Typography</h1>
+
+<p class="lead">This design uses Helvetica Neue for headings and paragraph text.</p>
+
+<hr />
+
+<h2 id="headings">Headings</h2>
+
+<p>Headings are used to denote different sections of content, usually consisting of related paragraphs and other HTML elements. They range from h1 to h6 and should be styled in a clear hierarchy (i.e., largest to smallest)</p>
+
+<hr />
+
+<h2 id="paragraphs">Paragraphs</h2>
+
+<p>Paragraphs are groups of sentences, each with a lead (first sentence) and transition (last sentence). They are block level elements, meaning they stack vertically when repeated. Use them as such.</p>
+
+<hr />
+
+<h1>Heading Level 1</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h2>Heading Level 2</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h3>Heading Level 3</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h4>Heading Level 4</h4>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h5>Heading Level 5</h5>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h6>Heading Level 6</h6>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam ratione sunt dolorum, qui illo maxime doloremque accusantium cum libero eum, a optio odio placeat debitis ullam aut non distinctio.</p>
+
+<h1 id="buttons">Buttons</h1>
+
+<p class="lead">Buttons are tied to an action of some kind, whether that button is on a cheese dispenser or launches the rocket that you're strapped to. On the web, we follow similar conventions.</p>
+
+<hr />
+
+<h2 id="primary-buttons">Primary Buttons</h2>
+
+<p>These buttons are primary calls to action and should be used sparingly. Their size can be adjusted with the <code class="highlighter-rouge">.tiny</code>, <code class="highlighter-rouge">.small</code>, and <code class="highlighter-rouge">.large</code> classes.</p>
+
+<pre><code class="language-html_example">&lt;a href="#" class="primary large button"&gt;Large button&lt;/a&gt;
+&lt;a href="#" class="primary button"&gt;Regular button&lt;/a&gt;
+&lt;a href="#" class="primary small button"&gt;Small button&lt;/a&gt;
+&lt;a href="#" class="primary tiny button"&gt;Tiny button&lt;/a&gt;
+</code></pre>
+
+<hr />
+
+<h2 id="secondary-buttons">Secondary Buttons</h2>
+
+<p>These buttons are used for less important, secondary actions on a page.</p>
+
+<pre><code class="language-html_example">&lt;a href="#" class="secondary large button"&gt;Large button&lt;/a&gt;
+&lt;a href="#" class="secondary button"&gt;Regular button&lt;/a&gt;
+&lt;a href="#" class="secondary small button"&gt;Small button&lt;/a&gt;
+&lt;a href="#" class="secondary tiny button"&gt;Tiny button&lt;/a&gt;
+</code></pre>
+
+<h1 id="forms">Forms</h1>
+
+<p class="lead">Use forms to allow users to interact with the site and provide information to the company.</p>
+
+<hr />
+
+<h2 id="elements-of-a-form">Elements of a Form</h2>
+
+<p>A form should be marked up using its default HTML properties. The ones we make use of include (in hierarchical order):</p>
+
+<ul>
+  <li>Form</li>
+  <li>Label</li>
+  <li>Input</li>
+  <li>Select</li>
+  <li>Text area</li>
+  <li>Button</li>
+</ul>
+
+<hr />
+
+<h2 id="how-to-use-1">How to Use</h2>
+
+<p>Make forms great and easy to use with the following rules:</p>
+
+<ul>
+  <li>Wrap checkboxes and radio buttons within labels for larger hit areas, and be sure to set the for, name, and id attributes for all applicable elements.</li>
+  <li>Series of checkboxes and radio buttons below within a <code class="highlighter-rouge">&lt;ul class="inline-list"&gt;</code>.</li>
+  <li>Before selecting any set of fields to use for a required input, explore other options (e.g., radio buttons over select lists).</li>
+</ul>
+
+<hr />
+
+<h2 id="learn-all-about-forms">Learn All About Forms</h2>
+
+<p>Check out the <a href="http://foundation.zurb.com/sites/docs">Foundation Docs</a> to learn about how flexible our forms are for creating different layouts. It works perfectly with the grid to meet all your form needs.</p>
+
+<hr />
+
+<h2 id="form-layouts">Form Layouts</h2>
+
+<p>Form elements in Foundation are styled based on their type attribute rather than a class. Inputs in Foundation have another major advantage — they are full width by default. That means that inputs will run as wide as the column that contains them. However, you have two options which make these forms extremely versatile:</p>
+
+<ul>
+  <li>You can size inputs using column sizes, like <code class="highlighter-rouge">.medium-6</code>, <code class="highlighter-rouge">.small-6</code>.</li>
+  <li>You can create row elements inside your form and use columns for the form, including inputs, labels and more. Rows inside a form inherit some special padding to even up input spacing.</li>
+</ul>
+
+<hr />
+
+<h2 id="form-example">Form Example</h2>
+
+<pre><code class="language-html_example">&lt;form&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-12 columns"&gt;
+      &lt;label&gt;Label&lt;/label&gt;
+      &lt;input type="text" placeholder="placeholder"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-6 columns"&gt;
+      &lt;label&gt;Label&lt;/label&gt;
+      &lt;input type="text" placeholder="placeholder"&gt;
+    &lt;/div&gt;
+    &lt;div class="large-6 columns"&gt;
+      &lt;div class="row collapse"&gt;
+        &lt;label&gt;Label&lt;/label&gt;
+        &lt;div class="input-group"&gt;
+          &lt;input class="input-group-field" type="text" placeholder="placeholder"&gt;
+          &lt;span class="input-group-label"&gt;.com&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-12 columns"&gt;
+      &lt;label&gt;Select Box&lt;/label&gt;
+      &lt;select&gt;
+        &lt;option value="good"&gt;Good&lt;/option&gt;
+        &lt;option value="better"&gt;Better&lt;/option&gt;
+        &lt;option value="best"&gt;Best&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-6 columns"&gt;
+      &lt;label&gt;Choose Your Favorite&lt;/label&gt;
+      &lt;input type="radio" name="radio1" value="radio1" id="radio1"&gt;&lt;label for="radio1"&gt;Red&lt;/label&gt;
+      &lt;input type="radio" name="radio2" value="radio2" id="radio2"&gt;&lt;label for="radio2"&gt;Blue&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="large-6 columns"&gt;
+      &lt;label&gt;Check these out&lt;/label&gt;
+      &lt;input id="checkbox1" type="checkbox"&gt;&lt;label for="checkbox1"&gt;Checkbox 1&lt;/label&gt;
+      &lt;input id="checkbox2" type="checkbox"&gt;&lt;label for="checkbox2"&gt;Checkbox 2&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-12 columns"&gt;
+      &lt;label&gt;Textarea Label&lt;/label&gt;
+      &lt;textarea placeholder="placeholder"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre>
+
+<h1 id="new-section">New Section</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora omnis suscipit id ut laborum recusandae molestias hic aliquid <strong>expedita!</strong> <a href="zurb.com">Non dicta</a>, autem obcaecati error, id ab voluptate unde culpa nulla.</p>
+
+<pre><code class="language-html_example">&lt;a href="#" class="button"&gt;Button&lt;/a&gt;
+&lt;a href="#" class="button"&gt;Button&lt;/a&gt;
+&lt;a href="#" class="button"&gt;Button&lt;/a&gt;
+</code></pre>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    
+  </body>
+</html>

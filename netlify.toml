@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/automationgeneration/automationgeneration.pdf"
+  to = "/automationgeneration"
+  status = 200
+  force = true

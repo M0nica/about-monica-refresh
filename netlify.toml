@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/automationgeneration/automationgeneration.pdf"
-  to = "/automationgeneration"
+  from = "/automationgeneration"
+  to = "/assets/automationgeneration.pdf"
   status = 200
   force = true

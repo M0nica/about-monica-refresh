@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa82321f-f79a-4e29-904d-0de984614b16/deploy-status)](https://app.netlify.com/sites/goofy-lewin-3610ce/deploys)
+
 # About Monica Redesigned
 
 <img src="https://raw.githubusercontent.com/M0nica/about-monica-refresh/master/src/assets/img/about-monica-website-screenshot.png" alt="draft of site as of 11-01-17">

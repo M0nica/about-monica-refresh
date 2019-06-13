@@ -18,23 +18,10 @@ It has a Gulp-powered build system with these features:
   - JavaScript compression
   - Image compression
   
-## Live Demo
-A version of the code in this repository can be viewed at <a href="http://wwww.aboutmonica.com">www.aboutmonica.com</a>.
+## Live Website
+<a href="http://wwww.aboutmonica.com">www.aboutmonica.com</a>.
 
-## Installation
 
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
-- [Git](https://git-scm.com/)
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
-```
 
 Then open the folder in your command line, and install the needed dependencies:
 

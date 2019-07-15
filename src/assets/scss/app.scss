@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import "settings";
-@import "foundation";
-@import "motion-ui";
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -54,7 +54,7 @@
 
 body {
   background-color: rgba(208, 189, 196, 0.33);
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   color: #3a324a;
   font-size: 18px;
   overflow-x: hidden;
@@ -159,7 +159,7 @@ $hero-height: 60vh;
 }
 
 .hero-section {
-  background: url("../img/desk.jpg");
+  background: url('../img/desk.jpg');
   background-size: cover;
   height: $hero-height;
   text-align: center;
@@ -212,19 +212,26 @@ h3 {
 }
 
 .row.cta-github,
-.design-quote {
+.creative-quote {
   background-color: #615967;
+}
+
+img.creative-quote {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
 }
 
 .row.cta-email p,
 .row.cta-github p,
-p.design-quote {
+p.creative-quote {
   text-align: center;
   margin: 1em;
 }
 
 .row.cta-github p,
-p.design-quote {
+p.creative-quote {
   color: white;
 }
 
@@ -301,7 +308,7 @@ a.logo-link {
 }
 
 .tint:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -322,7 +329,7 @@ a.logo-link {
 /*add padding for anchor tags*/
 
 :target:before {
-  content: "";
+  content: '';
   display: block;
   height: 75px; /* fixed header height*/
   margin: -75px 0 0; /* negative fixed header height */
@@ -366,7 +373,7 @@ a.button:hover {
   bottom: 0px;
   overflow: hidden;
   background-color: white;
-  content: "";
+  content: '';
   display: block;
   table-layout: fixed;
 }

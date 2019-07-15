@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "postinstall": "bower install"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
@@ -47,5 +48,7 @@
     ]
   },
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "bower": "^1.8.8"
+  }
 }

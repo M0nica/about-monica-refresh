@@ -19,7 +19,9 @@
     <link rel="stylesheet" href="{{root}}assets/css/bttn.min.css">
 
     <!-- jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
   <!-- fotorama.css & fotorama.js. -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.3/fotorama.css" rel="stylesheet">
@@ -38,7 +40,7 @@
 
     <footer>
 
-
+     
 
 
       <br>
@@ -49,6 +51,14 @@
         </div>
       </div> -->
       <div class="row" id="credits">
+
+        
+        
+          <img src="assets/img/creativity-quote.svg" alt="You can't use up creativity. The more you use, the more you have." class="design-quote">
+        
+       <p class="design-quote">
+          ― Dr. Maya Angelou
+        </p>
 
 
           <div class="large-12 columns">
@@ -98,16 +108,17 @@
     <script>
 
 
-    $(window).load(function(){
+       $(window).on('load', function () {
+   {
 $(window).scroll(function() {
-  var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
- // console.log(wintop);
-  var totalScroll = (wintop/(docheight-winheight))*100;
-  // console.log("total scroll" + totalScroll);
-  $(".progressBar").css("width",totalScroll+"%");
+        var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
+      console.log(wintop);
+        var totalScroll = (wintop/(docheight-winheight))*100;
+       console.log("total scroll" + totalScroll);
+        $(".progressBar").css("width",totalScroll+"%");
 });
 
 });
     </script>
-  </body>
+    </body>
 </html>

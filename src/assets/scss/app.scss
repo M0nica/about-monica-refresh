@@ -212,19 +212,19 @@ h3 {
 }
 
 .row.cta-github,
-.row.design-quote {
+.design-quote {
   background-color: #615967;
 }
 
 .row.cta-email p,
 .row.cta-github p,
-.row.design-quote p {
+p.design-quote {
   text-align: center;
   margin: 1em;
 }
 
 .row.cta-github p,
-.row.design-quote p {
+p.design-quote {
   color: white;
 }
 
@@ -253,7 +253,7 @@ svg.social {
 #credits {
   background-color: #625968;
   color: #efe9eb;
-  padding: 0.6em;
+  padding: 2em;
 }
 
 .large-6.columns.social-icons {
@@ -372,7 +372,7 @@ a.button:hover {
 }
 
 .progressBar {
-  width: 0%;
+  width: 100%;
   float: left;
   height: 100%;
   z-index: 99;

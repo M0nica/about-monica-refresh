@@ -175,6 +175,12 @@
 
       <h3>Latest Writing </h3>
       <p>
+        <a href="https://www.monica.dev/greys-anatomy-lorem-ipsum-generator"
+          target="_blank">Grey’s Anatomy Lorem Ipsum Generator Tutorial with React and Netlify Functions</a>
+        <em>This tutorial explains how to create a Lorem Ipsum generator in React with Netlify Functions</em>
+      </p>
+
+      <p>
         <a href="https://medium.freecodecamp.org/how-i-automatically-created-a-twitter-list-of-freecodecampers-in-5-minutes-425f0b922118"
           target="_blank">How I automatically generated a Twitter List of FreeCodeCampers</a>
         <em>How to programmatically aggregate conference attendees and other niche communities</em>
@@ -191,7 +197,7 @@
       </p>
 
       <p>
-        <a href="http://www.datalogues.com/using-tmdb-api" target="_blank">How to Use the TMDB API to Find Films with the Highest Revenue</a>
+        <a href="https://dev.to/m0nica/how-to-use-the-tmdb-api-to-find-films-with-the-highest-revenue-82p" target="_blank">How to Use the TMDB API to Find Films with the Highest Revenue</a>
         <em>A python tutorial for exploring the TMDB API</em>
       </p>
 
@@ -262,7 +268,7 @@
 
           <a href="https://github.com/M0nica/datalogues-refresh" class="button">
             <i class="far fa-code"></i> View on Github</a>
-          <a href="http://www.datalogues.com/" class="button">View Website</a>
+          <!-- <a href="http://www.datalogues.com/" class="button">View Website</a> -->
         </div>
 
 
@@ -275,7 +281,7 @@
             <span class="skill"> PHP</span>. </p>
           <a href="https://github.com/M0nica/AboutMonica" class="button">
             <i class="far fa-code"></i> View on Github</a>
-          <a href="http://aboutmonica.com/previous/" class="button">View Website</a>
+          <!-- <a href="http://aboutmonica.com/previous/" class="button">View Website</a> -->
         </div>
 
 
@@ -295,21 +301,6 @@
 
       </div>
 
-      <div class="row design-quote">
-        <div class="large-12 columns">
-          <p>
-            <span class="">
-              <i class="fas fa-quote-left"></i>
-
-
-
-              You
-              <em>can't</em> use up creativity. The more you use, the more you have.
-              <i class="fas fa-quote-right"></i>
-              <br> ― Maya Angelou</span>
-          </p>
-        </div>
-      </div>
 
       <!-- <div class="row small-up-1 medium-up-2 large-up-2">
 
@@ -366,12 +357,13 @@
   <script>
 
 
-    $(window).load(function () {
+     $(window).on('load', function () {
+       console.log('hey')
       $(window).scroll(function () {
         var wintop = $(window).scrollTop(), docheight = $('body').height(), winheight = $(window).height();
-      //  console.log(wintop);
+      console.log(wintop);
         var totalScroll = (wintop / (docheight - winheight)) * 100;
-       // console.log("total scroll" + totalScroll);
+        console.log("total scroll" + totalScroll);
         $(".progressBar").css("width", totalScroll + "%");
       });
 

@@ -367,12 +367,12 @@ a.button:hover {
   overflow: hidden;
   background-color: white;
   content: "";
-  display: table;
+  display: block;
   table-layout: fixed;
 }
 
 .progressBar {
-  width: 100%;
+  width: 0%;
   float: left;
   height: 100%;
   z-index: 99;

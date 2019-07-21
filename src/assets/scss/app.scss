@@ -195,6 +195,9 @@ $hero-height: 60vh;
 }
 
 /* headings */
+h1 {
+  font-size: 2rem;
+}
 h2 {
   font-size: 1.5rem;
 }
@@ -287,6 +290,9 @@ a#footer-email {
 img.headshot {
   border-radius: 50%;
   max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* on deck to be deprecated */
 img.logo {
